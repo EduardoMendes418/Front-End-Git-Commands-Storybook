@@ -1,73 +1,49 @@
-# React + TypeScript + Vite
+from pathlib import Path
+import pypandoc
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+readme_md = """# Git Commands Reference
 
-Currently, two official plugins are available:
+Uma aplicação web moderna e interativa para consultar comandos Git de forma rápida e organizada.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📋 Sobre o Projeto
 
-## React Compiler
+Esta aplicação fornece uma referência completa de comandos Git, organizada por categorias, com uma interface intuitiva que permite buscar, visualizar e copiar comandos facilmente.  
+Ideal para desenvolvedores de todos os níveis que desejam aprender ou relembrar comandos Git.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Funcionalidades
 
-## Expanding the ESLint configuration
+- 🔍 **Busca em Tempo Real:** Encontre comandos rapidamente através da barra de pesquisa
+- 📂 **Organização por Categorias:** Comandos divididos em 12 categorias lógicas
+- 📱 **Design Responsivo:** Interface que se adapta a qualquer tamanho de tela
+- 🎨 **Interface Moderna:** Design inspirado no GitHub Dark com gradientes e animações
+- 📋 **Copiar Comandos:** Botão de copiar integrado para cada comando
+- ⚡ **Rápido e Leve:** Construído com React para performance otimizada
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tecnologias Utilizadas
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **React** — Biblioteca principal
+- **JavaScript/JSX** — Lógica e componentes
+- **CSS-in-JS** — Estilização componentizada
+- **Lucide React** — Ícones modernos
+- **Vite** — Build tool e Dev Server
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🚀 Como Executar
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Pré-requisitos
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- Node.js (versão 14 ou superior)
+- npm ou yarn
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Passo a Passo
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+# Instalar dependências
+npm install
+# ou
+yarn install
+
+# Rodar a aplicação
+npm run dev
+# ou
+yarn dev
 ```
