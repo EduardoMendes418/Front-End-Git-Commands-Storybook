@@ -1,9 +1,7 @@
-from pathlib import Path
-import pypandoc
+## Git Commands Reference
 
-readme_md = """# Git Commands Reference
-
-Uma aplicação web moderna e interativa para consultar comandos Git de forma rápida e organizada.
+<img width="1285" height="472" alt="github" src="https://github.com/user-attachments/assets/661edc74-9898-47ab-a09c-7269b9cea3ae" />
+<img width="1281" height="666" alt="avancado" src="https://github.com/user-attachments/assets/02b1fcd0-b056-48ca-9c6c-5df78a43865e" />
 
 ## 📋 Sobre o Projeto
 
