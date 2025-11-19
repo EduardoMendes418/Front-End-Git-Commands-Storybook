@@ -1,4 +1,4 @@
-import CategorySection from '../components/CategorySection';
+import CategorySection from '../components/CategorySection/CategorySection';
 
 const sampleCommands = [
   {

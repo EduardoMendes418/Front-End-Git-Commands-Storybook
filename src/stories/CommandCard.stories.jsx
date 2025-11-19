@@ -1,4 +1,4 @@
-import CommandCard from '../components/CommandCard';
+import CommandCard from '../components/CommandCard/CommandCard';
 
 export default {
   title: 'Git Commands/CommandCard',

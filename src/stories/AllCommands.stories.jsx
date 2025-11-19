@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
-import CategorySection from '../components/CategorySection';
-import SearchBar from '../components/SearchBar';
+import CategorySection from '../components/CategorySection/CategorySection';
+import SearchBar from '../components/SearchBar/SearchBar';
 import { gitCommands } from '../data/gitCommands';
 
 export default {
